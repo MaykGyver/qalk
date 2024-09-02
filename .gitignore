@@ -1,0 +1,5 @@
+.venv
+build
+src/deployment
+pysidedeploy.spec
+pysidedeploy.test

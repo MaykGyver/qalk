@@ -1,0 +1,37 @@
+[app]
+title = Qalk
+project_dir = ./srv
+input_file = ./src/main.py
+exec_directory = ./build
+project_file = 
+icon = {venv}\Lib\site-packages\PySide6\scripts\deploy_lib\pyside_icon.ico
+
+[python]
+packages = Nuitka==2.3.2,ordered-set,zstandard
+android_packages = buildozer==1.5.0,cython==0.29.33
+python_path = {pythonpath}
+
+[qt]
+qml_files = 
+excluded_qml_plugins = 
+modules = 
+plugins = styles
+
+[android]
+wheel_pyside = 
+wheel_shiboken = 
+plugins = 
+
+[nuitka]
+macos.permissions = 
+extra_args = --quiet --noinclude-qt-translations
+
+[buildozer]
+mode = debug
+recipe_dir = 
+jars_dir = 
+ndk_path = 
+sdk_path = 
+local_libs = 
+arch = 
+

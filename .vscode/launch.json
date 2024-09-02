@@ -10,6 +10,18 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
-        }
-    ]
+        },
+        {
+            "name": "Deploy",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "pyside6-deploy -c ./pysidedeploy.spec",
+        },
+        {
+            "name": "Build",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/build.py",
+            "console": "integratedTerminal"
+        },    ]
 }
